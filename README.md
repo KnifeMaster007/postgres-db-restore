@@ -1,8 +1,13 @@
 # Postgres Database Restorer
+[![Release](https://jitpack.io/v/KnifeMaster007/postgres-db-restore.svg "Release")](https://jitpack.io/#KnifeMaster007/postgres-db-restore)
+
 
 This library helps you to quickly restore a Postgres database to a previous state.
 
 It was developed as means to speed up integration tests.
+
+This is fork from [ayedo/postgres-db-restore](https://github.com/ayedo/postgres-db-restore)
+with removed dependency on JOOQ, that can cause problems with projects, that uses JOOQ too.
 
 ## Introduction
 
@@ -39,7 +44,7 @@ Add the dependency:
 
 ```groovy
 dependencies {
-    testImplementation 'com.github.ayedo:postgres-db-restore:v1.0.0'
+    testImplementation 'com.github.knifemaster007:postgres-db-restore:v1.1.0'
 }
 ```
 
