@@ -4,6 +4,9 @@ This library helps you to quickly restore a Postgres database to a previous stat
 
 It was developed as means to speed up integration tests.
 
+This is fork from [ayedo/postgres-db-restore](https://github.com/ayedo/postgres-db-restore)
+with removed dependency on JOOQ, that can cause problems with projects, that uses JOOQ too.
+
 ## Introduction
 
 In many integration test scenarios the database needs to be setup before it can be used in a test. For example, often migrations need to be run.
@@ -39,7 +42,7 @@ Add the dependency:
 
 ```groovy
 dependencies {
-    testImplementation 'com.github.ayedo:postgres-db-restore:v1.0.0'
+    testImplementation 'com.github.knifemaster007:postgres-db-restore:v1.1.0'
 }
 ```
 
